@@ -2,7 +2,7 @@
 
 ## Setup
 - [x] 1. Scaffold the Vite project (React + JavaScript template)
-- [ ] 2. Install and configure Tailwind CSS (v4) and Prettier
+- [x] 2. Install and configure Tailwind CSS (v4) and Prettier
 - [ ] 3. Install React Router and set up the routing shell
 - [ ] 4. Set up folder structure (components, pages, data, assets)
 - [ ] 5. Build shared layout (Navbar + Footer with contact links) and scroll-to-top on route change
@@ -29,3 +29,4 @@
 - Start drafting project case-study text early; content takes longer than code.
 
 - Step 1: Scaffolded with create-vite 9.2.1 (React 19, Vite 8, oxlint for linting). Package renamed to `personal-portfolio`. `npm run build` passes. Template demo content (App.jsx/App.css, hero.png, sample SVGs) is still in place; it gets replaced in later steps.
+- Step 2: Tailwind 4.3.3 via `@tailwindcss/vite` (no tailwind.config.js); `src/index.css` is now just `@import 'tailwindcss'`. Prettier + `prettier-plugin-tailwindcss` with `format` / `format:check` scripts; Markdown files are ignored. Template demo page looks unstyled until it's replaced.
