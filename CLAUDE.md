@@ -26,14 +26,19 @@ to recruiters.
 - `/about` — Background: degree, bootcamp, internships
 - `/projects` and `/projects/:slug` — Project list + case-study detail pages
 - `/resume` — Resume/CV
-- `/contact` — Route exists later, not built yet
-- `/services`, `/blog` — Routes exist but stay out of the nav until there's content
+- `/contact` — Simple page with contact links (email, LinkedIn, GitHub); no form yet
+- `*` — 404 Not Found page (also used for unknown project slugs)
+- `/services`, `/blog` — Not created yet. Add them only once there's real content.
 
 ## Conventions
 - Functional components + hooks only
-- Tailwind for styling, avoid separate CSS files unless truly necessary
+- Tailwind for styling (v4, via `@tailwindcss/vite`), avoid separate CSS files unless truly necessary
 - Keep components small/reusable: Navbar, Footer, ProjectCard, Button, Layout
 - Project data lives in `src/data/projects.js`, not hardcoded in JSX
+- Contact links (email, LinkedIn, GitHub) are always visible in the Footer and on Home
+- Accessibility: semantic HTML, visible focus states, good contrast, keyboard navigable
+- Resume available as HTML page + downloadable PDF in `public/`
+- Prettier with `prettier-plugin-tailwindcss` for formatting
 
 ## Design direction
 Minimalist, whitespace-heavy, strong typography, mobile-first
