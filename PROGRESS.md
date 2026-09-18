@@ -4,7 +4,7 @@
 - [x] 1. Scaffold the Vite project (React + JavaScript template)
 - [x] 2. Install and configure Tailwind CSS (v4) and Prettier
 - [x] 3. Install React Router and set up the routing shell
-- [ ] 4. Set up folder structure (components, pages, data, assets)
+- [x] 4. Set up folder structure (components, pages, data, assets)
 - [ ] 5. Build shared layout (Navbar + Footer with contact links) and scroll-to-top on route change
 - [ ] 6. Stub out every page as a placeholder, plus a 404 catch-all route (no services/blog)
 - [ ] 7. First deploy (Vercel/Netlify) with SPA rewrite rule so deep links work on refresh
@@ -31,3 +31,4 @@
 - Step 1: Scaffolded with create-vite 9.2.1 (React 19, Vite 8, oxlint for linting). Package renamed to `personal-portfolio`. `npm run build` passes. Template demo content (App.jsx/App.css, hero.png, sample SVGs) is still in place; it gets replaced in later steps.
 - Step 2: Tailwind 4.3.3 via `@tailwindcss/vite` (no tailwind.config.js); `src/index.css` is now just `@import 'tailwindcss'`. Prettier + `prettier-plugin-tailwindcss` with `format` / `format:check` scripts; Markdown files are ignored. Template demo page looks unstyled until it's replaced.
 - Step 3: React Router 7.18.4 in data mode (`createBrowserRouter` + `RouterProvider`) so `<ScrollRestoration>` is available in step 5. Routes live in `src/router.jsx` with placeholder `<h1>`s, including `*` for 404. Removed the Vite demo (App.jsx, App.css, demo images, public/icons.svg) and set the page title in index.html.
+- Step 4: `src/components` (reusable UI), `src/pages` (one file per route), `src/data` (projects.js), `src/assets` (images imported by components; files in `public/` are served as-is). Empty folders hold a `.gitkeep` so git tracks them; delete each one when real files land.
